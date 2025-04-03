@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: ms-catalogo-service
+  profiles:
+    active: development
+  config:
+    import: optional:configserver:http://localhost:8080/eureka/
+server:
+  port: 8080
+
+eureka:
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
